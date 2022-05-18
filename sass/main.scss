@@ -1,0 +1,21 @@
+@import "./base/_vars.scss";
+@import "./base/reset";
+@import "./utils/hidden";
+
+@import "./components/container";
+@import "./components/logo";
+@import "./components/title";
+@import "./components/button";
+@import "./components/elips";
+@import "./components/modal";
+@import "./components/form-connect";
+
+@import "./layout/_header.scss";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/activity";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/subscribe";
+@import "./layout/portfolio";
