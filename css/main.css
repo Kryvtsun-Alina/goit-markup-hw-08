@@ -765,6 +765,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connect {
+    width: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (max-width: 1199px) {
   .connect {
     text-align: center;
@@ -812,6 +824,11 @@ img {
 .social {
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .social {
+    width: calc((100% - 30px) / 2);
+  }
 }
 @media screen and (min-width: 1200px) {
   .social {
