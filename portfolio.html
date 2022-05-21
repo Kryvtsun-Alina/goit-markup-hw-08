@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- <header class="header"> -->
-      <!--site-nav-->
-      <!-- <div class="container site-nav">
+    <header class="header">
+      <!-- site-nav -->
+      <div class="container site-nav">
         <a class="logo" href="/">Web<span class="logo__text">Studio</span></a>
         <nav>
           <ul class="site-nav__list list">
@@ -42,9 +42,9 @@
               <a class="link site-nav__link" href="">Контакты</a>
             </li>
           </ul>
-        </nav> -->
+        </nav>
         <!--contacts-->
-        <!-- <ul class="list contacts">
+        <ul class="list contacts">
           <li class="contacts__item">
             <a class="contacts__link link" href="mailto:info@devstudio.com"
               ><svg class="contacts__icon" width="16" height="12">
@@ -60,9 +60,98 @@
             >
           </li>
         </ul>
+        <!--mobile menu button-->
+        <button class="mob-btn__open" type="button" data-menu-open>
+          <svg class="mob-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <!--mobile menu-->
+        <div class="mobile-menu container is-hidden" data-menu>
+          <button class="mobile-btn__close" type="button" data-menu-close>
+            <svg class="mobile-menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <div class="menu-container">
+            <nav>
+              <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                  <a class="link mobile-menu__link" href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a
+                    class="link mobile-menu__link mobile-menu__link--current"
+                    href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link mobile-menu__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__link mobile-contacts__link--accent link"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul class="mobile-soc__list list">
+            <li class="mobile-soc__item">
+              <a
+                class="mobile-soc__link link"
+                href=""
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-soc__item">
+              <a
+                class="mobile-soc__link link"
+                href=""
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-soc__item">
+              <a
+                class="mobile-soc__link link"
+                href=""
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-soc__item">
+              <a
+                class="mobile-soc__link link"
+                href=""
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-    <main> -->
+    <main>
       <!--section portfolio-->
       <section class="portfolio">
         <div class="container">
@@ -98,7 +187,8 @@
                     src="./img-portfolio/img1.jpg"
                     alt="скрин страницы веб-сайта"
                     class="portfolio-list__image"
-                    width="370" height="294"
+                    width="370"
+                    height="294"
                   />
                   <p class="portfolio-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -119,7 +209,8 @@
                     src="./img-portfolio/img2.jpg"
                     alt="постер с двумя баскетболистами"
                     class="portfolio-list__image"
-                    width="370" height="294"  
+                    width="370"
+                    height="294"
                   />
                   <p class="portfolio-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -163,7 +254,8 @@
                     src="./img-portfolio/img4.jpg"
                     alt="наушники"
                     class="portfolio-list__image"
-                    width="370" height="294" 
+                    width="370"
+                    height="294"
                   />
                   <p class="portfolio-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -184,7 +276,8 @@
                     src="./img-portfolio/img5.jpg"
                     alt="две коробки"
                     class="portfolio-list__image"
-                    width="370" height="294"
+                    width="370"
+                    height="294"
                   />
                   <p class="portfolio-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -205,7 +298,8 @@
                     src="./img-portfolio/img6.jpg"
                     alt="изображение монитора компьютера"
                     class="portfolio-list__image"
-                    width="370" height="294"
+                    width="370"
+                    height="294"
                   />
                   <p class="portfolio-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -228,7 +322,8 @@
                     src="./img-portfolio/img7.jpg"
                     alt="изображение журнала"
                     class="portfolio-list__image"
-                    width="370" height="294"
+                    width="370"
+                    height="294"
                   />
                   <p class="portfolio-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -249,7 +344,8 @@
                     src="./img-portfolio/img8.jpg"
                     alt="изображение бирки"
                     class="portfolio-list__image"
-                    width="370" height="294"
+                    width="370"
+                    height="294"
                   />
                   <p class="portfolio-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -270,7 +366,8 @@
                     src="./img-portfolio/img9.jpg"
                     alt="изображение ноутбука"
                     class="portfolio-list__image"
-                    width="370" height="294"
+                    width="370"
+                    height="294"
                   />
                   <p class="portfolio-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -359,5 +456,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
