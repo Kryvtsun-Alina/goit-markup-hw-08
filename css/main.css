@@ -465,6 +465,9 @@ img {
     display: none;
   }
 }
+.mob-btn:hover .mob-btn__icon {
+  fill: var(--accent-color--);
+}
 
 .hero {
   padding-top: 118px;
