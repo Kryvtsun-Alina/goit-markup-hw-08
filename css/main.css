@@ -982,14 +982,32 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filters-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filters-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    margin-bottom: 50px;
+  }
 }
 .filters-list__item {
   margin-left: 8px;
@@ -1002,7 +1020,7 @@ img {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color--);
@@ -1019,15 +1037,30 @@ img {
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: -30px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
 .portfolio-list__item {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin-left: 30px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list__item {
+    width: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list__item {
+    flex-basis: calc(33.3333333333% - 30px);
+  }
 }
 .portfolio-list__link {
   display: block;
@@ -1045,7 +1078,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 45px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -1054,6 +1087,12 @@ img {
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(5%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .portfolio-list__text {
+    padding-top: 77px;
+    padding-bottom: 77px;
+  }
 }
 .portfolio-list__link:hover .portfolio-list__text {
   transform: translateY(-100%);
