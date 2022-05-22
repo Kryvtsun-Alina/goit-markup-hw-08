@@ -229,8 +229,8 @@
           <ul class="list activity__list">
             <li class="activity__item">
               <div class="activity__link">
-                <img
-                  src="./img-services/img1.jpg"
+                <img srcset="./img-services/img1.jpg 1x, ./img-services/activity1_2x.jpg 2x"
+                  src="./img-services/activity1_2x.jpg"
                   alt="руки над клавиатурой компьютера"
                   width="370"
                 />
@@ -241,8 +241,8 @@
             </li>
             <li class="activity__item">
               <div class="activity__link">
-                <img
-                  src="./img-services/img2.jpg"
+                <img srcset="./img-services/img2.jpg 1x, ./img-services/activity2_2x.jpg 2x"
+                  src="./img-services/activity2_2x.jpg"
                   alt="рука держит телефон перед ноутбуком"
                   width="370"
                 />
@@ -253,8 +253,8 @@
             </li>
             <li class="activity__item">
               <div class="activity__link">
-                <img
-                  src="./img-services/img3.jpg"
+                <img srcset="./img-services/img3.jpg 1x, ./img-services/activity3_2x.jpg 2x"
+                  src="./img-services/activity3_2x.jpg"
                   alt="планшет в руке в котором цветная графика"
                   width="370"
                 />
@@ -272,12 +272,30 @@
           <h2 class="team__title typical-title">Наша команда</h2>
           <ul class="list workers-list">
             <li class="workers-list__item">
-              <img
-                src="./img-team/img.jpg"
-                alt="фотография мужчины в очках"
-                class="team-photo"
-                width="270"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./img-team/team_dt.jpg   1x,
+                    ./img-team/team_dt2x.jpg 2x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./img-team/team_tab.jpg   1x,
+                    ./img-team/team_tab2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./img-team/team_mob.jpg   1x,
+                    ./img-team/team_mob2x.jpg 2x
+                  "
+                  media="(max-width:767px)" />
+                <img
+                  src="./img-team/img.jpg"
+                  alt="фотография мужчины в очках"
+                  class="team-photo"
+              /></picture>
               <div class="workers-list__caption">
                 <h3 class="workers-list__title">Игорь Демьяненко</h3>
                 <p class="workers-list__text">Product Designer</p>
@@ -312,12 +330,30 @@
               </div>
             </li>
             <li class="workers-list__item">
-              <img
-                src="./img-team/img1.jpg"
-                alt="фотография женьщины в очках"
-                class="team-photo"
-                width="270"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./img-team/team2_dt.jpg   1x,
+                    ./img-team/team2_dt2x.jpg 2x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./img-team/team2_tab.jpg   1x,
+                    ./img-team/team2_tab2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./img-team/team2_mob.jpg   1x,
+                    ./img-team/team2_mob2x.jpg 2x
+                  "
+                  media="(max-width:767px)" />
+                <img
+                  src="./img-team/img1.jpg"
+                  alt="фотография женщины в очках"
+                  class="team-photo"
+              /></picture>
               <div class="workers-list__caption">
                 <h3 class="workers-list__title">Ольга Репина</h3>
                 <p class="workers-list__text">Frontend Developer</p>
@@ -352,12 +388,29 @@
               </div>
             </li>
             <li class="workers-list__item">
-              <img
-                src="./img-team/img2.jpg"
-                alt="фотография улыбающегося мужчины в полуобороте"
-                class="team-photo"
-                width="270"
-              />
+             <source
+                  srcset="
+                    ./img-team/team3_dt.jpg   1x,
+                    ./img-team/team3_dt2x.jpg 2x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./img-team/team3_tab.jpg   1x,
+                    ./img-team/team3_tab2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./img-team/team3_mob.jpg   1x,
+                    ./img-team/team3_mob2x.jpg 2x
+                  "
+                  media="(max-width:767px)" />
+                <img
+                  src="./img-team/img2.jpg"
+                  alt="фотография улыбающегося мужчины"
+                  class="team-photo"
+              /></picture>
               <div class="workers-list__caption">
                 <h3 class="workers-list__title">Николай Тарасов</h3>
                 <p class="workers-list__text">Marketing</p>
@@ -392,12 +445,29 @@
               </div>
             </li>
             <li class="workers-list__item">
-              <img
-                src="./img-team/img3.jpg"
-                alt="фотография мужчины в очках с бородой"
-                class="team-photo"
-                width="270"
-              />
+              <source
+                  srcset="
+                    ./img-team/team4_dt.jpg   1x,
+                    ./img-team/team4_dt2x.jpg 2x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./img-team/team4_tab.jpg   1x,
+                    ./img-team/team4_tab2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./img-team/team4_mob.jpg   1x,
+                    ./img-team/team4_mob2x.jpg 2x
+                  "
+                  media="(max-width:767px)" />
+                <img
+                  src="./img-team/img3.jpg"
+                  alt="фотография мужчины в черной футболке"
+                  class="team-photo"
+              /></picture>
               <div class="workers-list__caption">
                 <h3 class="workers-list__title">Михаил Ермаков</h3>
                 <p class="workers-list__text">UI Designer</p>
