@@ -11,6 +11,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+
+  margin-top: -15px;
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
@@ -23,6 +25,7 @@
   }
 
   &__item {
+    margin-top: 15px;
     margin-left: 8px;
 
     &:first-child {
@@ -31,12 +34,12 @@
   }
 
   &__button {
-    padding: 6px 22px;
+    padding: 6px 16px;
 
     font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
+    font-size: 14px;
+    line-height: 1.22;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -49,6 +52,14 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {
+      padding-right: 22px;
+      padding-left: 22px;
+
+      font-size: 16px;
+      line-height: 1.63;
+    }
 
     &:hover,
     &:focus {
