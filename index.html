@@ -18,7 +18,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -63,14 +62,14 @@
           </li>
         </ul>
         <!--mobile menu button-->
-        <button class="mob-btn__open" type="button" data-menu-open>
+        <button class="mob-btn__open js-open-menu" type="button">
           <svg class="mob-btn__icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu_40px"></use>
           </svg>
         </button>
         <!--mobile menu-->
-        <div class="mobile-menu container is-hidden" data-menu>
-          <button class="mobile-btn__close" type="button" data-menu-close>
+        <div class="mobile-menu container js-menu-container" id="mobile-menu">
+          <button class="mobile-btn__close js-close-menu" type="button">
             <svg class="mobile-menu__icon" width="40" height="40">
               <use href="./images/icons.svg#icon-close_40px"></use>
             </svg>
@@ -388,7 +387,8 @@
               </div>
             </li>
             <li class="workers-list__item">
-             <source
+              <picture
+                ><source
                   srcset="
                     ./img-team/team3_dt.jpg   1x,
                     ./img-team/team3_dt2x.jpg 2x
@@ -408,7 +408,7 @@
                   media="(max-width:767px)" />
                 <img
                   src="./img-team/img2.jpg"
-                  alt="фотография улыбающегося мужчины"
+                  alt="фотография молодого мужчины"
                   class="team-photo"
               /></picture>
               <div class="workers-list__caption">
@@ -445,6 +445,7 @@
               </div>
             </li>
             <li class="workers-list__item">
+              <picture>
               <source
                   srcset="
                     ./img-team/team4_dt.jpg   1x,
@@ -557,11 +558,15 @@
             <a class="logo logo-footer" href="/"
               >Web<span class="logo__text--light">Studio</span></a
             >
-            <address class="footer-conteiner__address">
-              г. Киев, пр-т Леси Украинки, 26
+            <address class="footer-address">
+              <ul class="footer-addres__list list">
+                <li class="footer-address__item"><a href="" class="footer-address__location link">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="footer-address__item"><a href="" class="footer-address__link link">info@example.com</a></li>
+                <li class="footer-address__item"><a href="" class="footer-address__link link">+38 099 111 11 11</a</li>
+              </ul>
             </address>
-            <p class="footer-conteiner__text">info@example.com</p>
-            <p class="footer-conteiner__text">+38 099 111 11 11</p>
+            <p class="footer-conteiner__text"></p>
+            <p class="footer-conteiner__text"></p>
           </div>
           <div class="social">
             <p class="social__text">присоединяйтесь</p>
@@ -628,7 +633,7 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <!-- ---modal form---- -->
+        <!--modal form-->
         <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
           <div class="modal-form__wrap">
@@ -705,7 +710,6 @@
 
           <button type="submit" class="button-send button">Отправить</button>
         </form>
-        <!------------------------>
       </div>
     </div>
     <script src="./js/modal.js"></script>
