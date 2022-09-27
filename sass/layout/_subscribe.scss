@@ -1,11 +1,4 @@
-.form-container {
-  @media screen and (min-width: 768px) {
-  }
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 72px;
-    padding-bottom: 94px;
-  }
 
   .form-container__text {
     margin-bottom: 20px;
@@ -21,7 +14,7 @@
       text-align: center;
     }
   }
-}
+
 .form-wrap {
   margin-right: auto;
   margin-left: auto;
